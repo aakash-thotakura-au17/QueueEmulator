@@ -1,0 +1,7 @@
+* {
+    text-transform: capitalize;
+}
+
+#ansStrip:nth-child(0) {
+    background-color: black;
+}
