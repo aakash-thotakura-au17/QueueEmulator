@@ -7,9 +7,10 @@ console.log(PORT)
 
 app.get('/', (req, res) => {
     // res.send('Welcome To Home Page')
-    res.sendFile(`${__dirname}/views/index.html`)
+    res.sendFile(`${__dirname}/index.html`)
 })
 
+// console.log(`Welcome to ${__dirname}/index.html`)
 
 
 
