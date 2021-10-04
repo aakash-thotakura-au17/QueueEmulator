@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Emulator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            text-transform: capitalize;
+        }
+
+        #ansStrip:nth-child(0) {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <h1 class="display-3">queue emulator</h1>
+
+        <p>the number you want to add to the queue</p>
+        <input class="p-1 w-100 mb-3 form-control" id="queueInput" type="text" placeholder="enter the number">
+
+        <button class="btn border-success text-success" id="add">Add</button>
+        <button class="btn border-danger text-danger" id="remove">Remove</button>
+
+        <h2 id="ansStrip" class="fw-normal"></h2>
+
+    </div>
+
+    <script src="">
+            
+    var queueInput = document.querySelector("#queueInput")
+    var add = document.querySelector("#add")
+    var remove = document.querySelector("#remove")
+    var ansStrip = document.querySelector("#ansStrip")
+
+    var userStack = []
+
+    add.addEventListener("click", function(e) {
+        userStack.push(queueInput.value)
+        // console.log("pushed", queueInput.value, "into", userStack)
+
+        console.log(userStack, userStack.length)
+        // console.log(ansStrip.lenght)
+        console.log(ansStrip[0])
+
+        ansStrip.innerText = userStack
+        console.log(ansStrip[0])
+        // ansStrip.style.color = "red";
+        ansStrip.style.color = "black"
+        
+    })
+
+    remove.addEventListener("click", function(e) {
+        userStack.shift(queueInput.value)
+        console.log("pushed", queueInput.value, "into", userStack)
+
+        ansStrip.innerText = userStack
+
+    })
+
+    </script>
+    
+</body>
+</html>
