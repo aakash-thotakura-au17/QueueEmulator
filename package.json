@@ -1,0 +1,24 @@
+{
+  "name": "heroku",
+  "version": "1.0.0",
+  "description": "Queue Emulator - Heroku",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aakash-thotakura-au17/QueueEmulator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aakash-thotakura-au17/QueueEmulator/issues"
+  },
+  "homepage": "https://github.com/aakash-thotakura-au17/QueueEmulator#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
