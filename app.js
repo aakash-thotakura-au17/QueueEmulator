@@ -1,5 +1,7 @@
 const express = require('express');
 const app = express();
+const PORT = process.env.PORT || 4651;
+console.log(PORT)
 
 
 
@@ -10,4 +12,4 @@ app.get('/', (req, res) => {
 
 
 
-app.listen(4651, () => console.log('server listening on port 4651'))
+app.listen(PORT, () => console.log(`server listening on port ${PORT}`))
